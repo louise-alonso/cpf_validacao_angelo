@@ -1,12 +1,6 @@
 import re
 
 def validar_cpf(cpf: str) -> bool:
-    """
-    Valida um CPF brasileiro.
-
-    :param cpf: CPF como string (somente números ou no formato xxx.xxx.xxx-xx)
-    :return: True se for válido, False caso contrário
-    """
     
     cpf = re.sub(r'\D', '', cpf)  # Remove caracteres não numéricos
 
